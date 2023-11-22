@@ -2,7 +2,7 @@
 const hacker1 = "Adrian Bueno"
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = "Michel Mendes "
+const hacker2 = "Michel Mendes"
 console.log(`The navigator's name is ${hacker2}`);
 
 let maxNumberOfCharacter = Math.min(hacker1.length, hacker2.length);
@@ -14,7 +14,6 @@ if (hacker1.length > hacker2.length) {
     console.log(`The navigator ${hacker2} has the longest name, it has ${hacker2.length} characters.`);
 } else {
     console.log(`Wow, you both have equally long names, ${maxNumberOfCharacter} characters!`);
-
 }
 
 // Iteration 3: Loops
