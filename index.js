@@ -2,10 +2,10 @@
 const hacker1 = "Adrian Bueno"
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = "Adrian Bueo"
+const hacker2 = "Adrian Bueo TWO"
 console.log(`The navigator's name is ${hacker2}`);
 
-
+let maxNumberOfCharacter = Math.min(hacker1.length, hacker2.length);
 
 // Iteration 2: Conditionals
 
@@ -14,7 +14,7 @@ if (hacker1.length > hacker2.length) {
 } else if (hacker1.length < hacker2.length) {
     console.log(`The navigator ${hacker2} has the longest name, it has ${hacker2.length} characters.`);
 } else {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
+    console.log(`Wow, you both have equally long names, ${maxNumberOfCharacter} characters!`);
 
 }
 
@@ -33,7 +33,7 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 }
 console.log(navigatorNameReversed)
 
-for (let i = 0; i < Math.min(hacker1.length, hacker2.length); i++) {
+for (let i = 0; i < maxNumberOfCharacter; i++) {
     if (hacker1[i] < hacker2[i]) {
         orderMessage = "The driver's name goes first.";
     } else if (hacker1[i] > hacker2[i]) {
